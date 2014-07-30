@@ -1,0 +1,252 @@
+/*
+Theme Name: plainola
+Theme URI: http://ics.upjs.sk/~novotnyr
+Description: novotnyr WP theme v4
+Author: novotnyr
+Author URI: http://ics.upjs.sk/~novotnyr
+Template: twentyeleven
+Version: 0.1
+*/
+ 
+@import url("../twentyeleven/style.css");
+
+body {
+  font-family: 'Open Sans', Georgia;
+  background-color: #000000;
+}
+
+
+.entry-content p, .entry-content li {
+  font-size: 11pt;
+  margin-bottom: 10pt;
+}
+
+code, kbd {
+  /*
+  font: 12pt Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  */
+  font-family: 'Open Sans', Georgia;
+  font-weight: 600;
+  color: #373737;
+  font-size: 11pt;
+}
+
+pre code, pre.java {
+  font: 11pt Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;  
+}
+
+
+pre, pre.java {
+  line-height: 16pt;
+  background: white;
+  border-left: #D0E9BF solid 18px;
+
+  margin-left: 0px;
+}
+
+
+
+#branding a img {
+  display: none;
+}
+
+#branding {
+  border-top: 0;
+  
+  border-bottom: 16px solid #6eb43e;
+  
+}
+
+nav#access {
+  display: none;
+}
+
+#page-title, #site-title a {
+  font-weight: normal;
+  font-size: 2.8em;
+  line-height: 18px;     
+  color: #6eb43e;
+}
+
+
+#page-subtitle, #site-description {
+  height: 32px;
+  color: #AAAAAA;
+  font-size: 15.5pt;
+  letter-spacing: 3px; 
+  margin-left: 2px;
+
+  margin-bottom: 1em;
+}
+
+a, .entry-meta a, .widget a {
+  color: #000000;
+  font-weight: normal;
+}
+
+.entry-content a {
+  border-bottom: 1px dotted #999999;
+  padding-bottom: 0px;
+  color: #373737;
+}
+
+.entry-content strong {
+  /*font-variant: small-caps;*/
+  /*font-size: 14pt;*/
+  /*
+  font-weight: 800;
+  color: #6eb43e;
+  */
+  font-weight: 800;  
+}
+
+.entry-content strong em {
+  font-weight: normal; 
+  font-variant: small-caps;
+  font-style: normal;
+  font-size: 110%  
+}
+
+
+
+.singular .entry-header,
+.singular .entry-content,
+.singular footer.entry-meta,
+.singular #comments-title {
+  margin: 0 0 auto 0;
+  width: 80%;
+}
+
+.singular .entry-title, .entry-title {
+  font-family: 'Open Sans', Georgia;
+  font-weight: normal;
+  font-size: 2.8em;
+  margin-top: 12px;
+}
+
+.entry-title {
+  font-size: 2.0em;
+}
+
+.entry-title a {
+  border-bottom: 0px;
+}
+
+.entry-content {
+  padding-top: 0.8em;
+}
+
+.entry-content h1 {
+  font-size: 1.8em;
+  font-weight: normal; 
+  font-family: 'Open Sans', Verdana;
+
+  color: #6eb43e;
+  margin-bottom: 12pt;
+}
+
+.entry-content h1 code, .entry-content h1 kbd {
+  color: #6eb43e;
+
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.entry-content h2 {
+  font-family: 'Open Sans';
+  font-size: 15pt;
+  margin-top: 30px;
+  font-weight: normal;
+
+  color: #6eb43e;
+
+}
+
+.entry-content h2 code, .entry-content h2 kbd {
+  color: #6eb43e;
+
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 14pt;  
+}
+
+.entry-content h3 {
+  font-family: 'Open Sans';
+  font-size: 11pt;
+  margin-top: 30px;
+  font-weight: normal;
+  text-transform: none;
+
+  color: #6eb43e;
+}
+
+.entry-content .note {
+   border-left: #D0E9BF solid 36px; 
+   margin-left: 0px;
+   padding-left: 12px;   
+}
+
+.entry-content .note h5 {
+    font-weight: bold;    
+}
+
+/* Hackadelic TOC */
+
+div.toc {
+	font-size: .75em;
+}
+div.toc.toc-left {
+	max-width: 22em;
+	float: left;
+	margin: 5px 5px 5px 0;
+}
+div.toc.toc-right {
+	max-width: 22em;
+	float: right;
+	margin: 5px 0 5px 5px;
+}
+
+div.toc a.toc-header {
+	display: block;
+	border: 0;
+
+/** Styling regarding TOC title: **/
+	padding: 1px 2px;
+	text-align: left;
+	font-size: 2.7em;
+	color: #6eb43e;
+}
+
+div.toc a.toc-header:hover {
+}
+
+div.toc ul {
+	list-style: none;
+
+	margin: 0;
+	padding: 5px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+div.toc.auto-collapse ul {
+	display: none;
+}
+
+div.toc li a {
+	text-decoration: none;
+	border: 0 none;
+}
+div.toc li.toc-level-1 {
+	font-weight: bold;
+}
+div.toc li.toc-level-2 {
+	font-weight: bold;
+	padding-left: 2em;
+}
+div.toc li.toc-level-3 {
+	padding-left: 4em;
+}
+div.toc li.toc-level-4 {
+	padding-left: 6em;
+}
